@@ -105,7 +105,17 @@ public class Board {
     }
 
     public String getWinner() {
-        return null;
+        String winner = "";
+
+        if (isInFavorOfX()) {
+            winner = "X";
+        }
+
+        if (isInFavorOfO()) {
+            winner = "O";
+        }
+
+        return winner;
     }
 
 }
